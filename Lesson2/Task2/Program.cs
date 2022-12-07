@@ -11,18 +11,28 @@
 
 
 
-Console.WriteLine("Введите число");
+// Console.WriteLine("Введите число");
 
-int num = int.Parse(Console.ReadLine());
-
-int res = num % 10;
+// int num = int.Parse(Console.ReadLine());
 
 
+// int res = 0;
+
+// if (num > 100) 
+// {
+//     res = (num /10)% 10; }
+// else{
+//      res = num % 10;
+// }
+
+// if (num < 100) 
+// {
+//     Console.WriteLine ("Третьей цифры нет"); }
+// else{
+//     Console.WriteLine(res);
+// }
 
 
-if (num < 100) 
-{
-    Console.WriteLine ("Третьей цифры нет"); }
-else{
-    Console.WriteLine(res);
-}
+
+
+
