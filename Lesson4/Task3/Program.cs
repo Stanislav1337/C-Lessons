@@ -7,50 +7,50 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
-// using System;
-// Random rnd = new Random();
-
-// bool isInt = int.TryParse(Console.ReadLine(), out int num);
-// if (!isInt){
-//     Console.WriteLine("Это что угодно, но только не целое число");
-// } 
-// else{
-//     int userLength = num;
+int [] userArray = EnteredArray();
+PrintedArray(userArray);
 
 
-// int[] userArray = ArrayFilling(userLength);
-// PrintArr(userArray);
 
-// test(userArray, userLength);
+int[] EnteredArray()
+{
+    Console.WriteLine("Enter array lenght, please.");
+    int lngt = InputIntNumberTryParse();
+    int [] arr = new int [lngt];
+    int i = 0;
+    while (i < lngt)
+    {
+        Console.WriteLine($"Enter {i}-element array's [{lngt}], please.");
+        arr[i] = InputIntNumberTryParse();
+        i++;
+    }
+    return arr;
+} 
 
-// int[] ArrayFilling(int userLength){
-//     int[] arr = new int[userLength];
-//     for (int i = 0; i < arr.Length; i++){
-//         arr[i] = rnd.Next(0,2);
-//     }
-//     return arr;
-// }
+void PrintedArray(int [] printArray)
+{
+    int index = 0;
+    while (index < printArray.Length)
+    {
+        Console.Write($"[{printArray[index]}] ");
+        index++;
+    }
+    Console.WriteLine();
+}
 
-// void PrintArr (int[] array){
-//     for(int i = 0; i < array.Length; i++){
-//         Console.Write($"{array[i]} ");
-//     }
-//     Console.WriteLine();
-// }
-// }
+int InputIntNumberTryParse()
+{
 
-// void test (int[] userArray, int userLength){
+    bool isParsed = int.TryParse(Console.ReadLine(), out int num);
 
-//     if (userArray.Length == userLength){
-//         Console.WriteLine("Тест совместимости длины пройден успешно");
-//     } else {
-//         Console.WriteLine("Тест совместимости длины провален");
-//     }
-
-//     for (int i = 0; i < userArray.Length; i++){
-//         if (!(i == 0 || i == 1)){
-//             Console.WriteLine("Тест совместимости данных провален");
-//         }
-//     } 
-//     Console.WriteLine("Тест совместимости данных пройден успешно");
-// }
+    if (!isParsed)
+    {
+        Console.WriteLine("Sorry, but You entered bullshit. Please, number enter.");
+        return 0;
+    }
+    else
+    {
+        Console.WriteLine($"{num} -- it's number user's entered.");
+        return num;
+    }
+}
