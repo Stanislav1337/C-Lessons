@@ -5,9 +5,9 @@
 // 3 -> 1, 8, 27    5 -> 1, 8, 27, 64, 125
 // массив
 
-int num = InputIntNumberTryParse(); //ввели данные
-int [] cubesTable = GetTableOfCubes(num); // посчитали кубы
-PrintArray (cubesTable); // вывели массив на печать
+int num = InputIntNumberTryParse(); 
+int [] cubesTable = GetTableOfCubes(num); 
+PrintArray (cubesTable); 
 
 int InputIntNumberTryParse ()
 {
