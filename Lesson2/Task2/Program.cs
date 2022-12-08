@@ -33,43 +33,43 @@
 // }
 
 
-Console.WriteLine("Введите число.");
-bool isParsed = int.TryParse(Console.ReadLine(), out int number);
+// Console.WriteLine("Введите число.");
+// bool isParsed = int.TryParse(Console.ReadLine(), out int number);
 
-if (isParsed == true)
-{
-    if (number >= 100 | number <= -100)
-    {   
-        int number3 = number;
-        if (number3 < 0)
-        {
-            number3 = number3 * -1;
-        }
+// if (isParsed == true)
+// {
+//     if (number >= 100 | number <= -100)
+//     {   
+//         int number3 = number;
+//         if (number3 < 0)
+//         {
+//             number3 = number3 * -1;
+//         }
         
-        if (number3 > 999)
-        {
-            while (number3 > 999)
-            {
-                number3 = number3 / 10;
-            }
-            number3 = number3 % 10;
-        }
+//         if (number3 > 999)
+//         {
+//             while (number3 > 999)
+//             {
+//                 number3 = number3 / 10;
+//             }
+//             number3 = number3 % 10;
+//         }
         
-        else
-        {   
-            number3 = number3 % 10;
-        }
+//         else
+//         {   
+//             number3 = number3 % 10;
+//         }
         
-        Console.WriteLine($"{number3} -- 'это 3 число из этого' {number}");
-    }
-    else
-    {
-        Console.WriteLine($"Прости, но у тебя нет 3-его числа из этого {number}.");
-    }
-}
-else
-{
-    Console.WriteLine("Прости но это нам не подходит. Пожалуйста введи число");
-}
+//         Console.WriteLine($"{number3} -- 'это 3 число из этого' {number}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Прости, но у тебя нет 3-его числа из этого {number}.");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Прости но это нам не подходит. Пожалуйста введи число");
+// }
 
 
