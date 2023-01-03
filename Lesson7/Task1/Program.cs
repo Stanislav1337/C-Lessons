@@ -8,16 +8,15 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9 */
 
-// using static UserMethods.Method;
 
 // Console.WriteLine("Create 2d array: enter m(rows) and n(colums)");
-// double[,] arrayCreate = CreatedDoubleRandom2dArray(InputUIntNumberTryParse(), InputUIntNumberTryParse());
-// Print2dArrayDouble(arrayCreate);
+// double[,] arrayCreate = CreatedDoubleRandom2dArray( 5, 5);
+// PrintArray(arrayCreate);
 
-// double[,] CreatedDoubleRandom2dArray(uint mRows, uint nColuns)
+// double[,] CreatedDoubleRandom2dArray(uint m, uint n)
 // {
 //     Random rnd = new Random();
-//     double[,] array = new double[mRows, nColuns];
+//     double[,] array = new double[m, n];
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < array.GetLength(1); j++)
@@ -27,3 +26,15 @@
 //     }
 //     return array;
 // }
+
+// void PrintArray(double [,] array)
+//     {
+//         for (var i = 0; i < array.GetLength(0); i++)
+//         {
+//             for (var j = 0; j < array.GetLength(1); j++)
+//             {
+//                 Console.Write($"{array[i, j]}    ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
